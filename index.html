@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+    
+      <div class="content">
+        <div class="alarm-img">
+        </div>
+        <center>
+          <div id="clock-container">
+            <span id="clock"></span>
+          </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <div class="input-section">
+          <select name="hr" id="hr-input">
+            <option value="hr">hr</option>
+            <!-- <option value="01">01</option> -->
+          </select>
+          <select name="min" id="min-input">
+            <option value="min">min</option>
+            <option value=""></option>
+          </select>
+          <select name="sec" id="sec-input">
+            <option value="sec">sec</option>
+          </select>
+          <select name="" id="">
+            <option value="AM/PM">AM/PM</option>
+          </select>
+        </div>
+        <center>
+          <div id="action-Btn">
+            <div>
+              <button id="set-btn">Set Alarm</button>
+            </div>
+            <!-- <div>
+              <button id="stop-btn">Stop Alarm</button>
+            </div> -->
+          </div>
+        </center>
+        <div>
+          <center>
+          <h2 id="display-alarm">Display Alarm</h2>
+          </center>
+          <div id="display-set-alarm">
+            <ul id="list">
+              <!-- <li>
+                <h2 id="alarm-list">12</h2>
+                <span class="delete-btn">
+                  <button>Delete</button>
+                </span>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
