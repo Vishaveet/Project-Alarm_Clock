@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+/* main container */
 .container {
   height: 100vh;
   width: 100vw;
@@ -20,7 +21,7 @@ body {
   border-radius: 10px;
   background-color: transparent;
 }
-/* ---------------------------------------------- */
+/* ------------Current Time session -------------------- */
 #clock-container {
   background: rgba(0, 0, 0, 0.35);
   box-shadow: 0 8px 32px 0 rgba(137, 138, 139, 0.37);
@@ -44,6 +45,7 @@ body {
 }
 /* ----------------------------------------------- */
 
+/* input section design  */
 .input-section {
   display: flex;
   justify-content: center;
@@ -62,6 +64,7 @@ select {
 select::-webkit-scrollbar {
   overflow: hidden;
 }
+/* Set Alarm button design  */
 #action-Btn {
   display: flex;
   justify-content: center;
@@ -77,17 +80,13 @@ select::-webkit-scrollbar {
   outline: none;
   color: white;
   font-size: 21px;
+  background-color: #adaeaf;
 }
 #action-Btn button:hover {
   color: white;
-}
-#set-btn {
-  background-color: #adaeaf;
-}
-#set-btn:hover {
   background-color: #4b6287;
 }
-
+/* ----Display list Set alarm section---- */
 #display-set-alarm {
   height: 200px;
   overflow: scroll;
@@ -130,7 +129,7 @@ select::-webkit-scrollbar {
   background-color:darkkhaki;
   color: white;
 }
-
+/* ---Responsvie design  */
 @media all and (max-width: 500px) {
   #action-Btn button {
     height: 40px;

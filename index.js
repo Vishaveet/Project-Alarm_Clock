@@ -7,7 +7,7 @@ let alarmArr = [];
 
 let alarmTime = null;
 let alarmTimeOut = null;
-
+// this section prrovide the multiple option to select one
 for (let i = 12; i > 0; i--) {
   i = i < 10 ? "0" + i : i;
   let option = `<option value="${i}">${i}</option>`;
@@ -26,7 +26,7 @@ for (let i = 2; i > 0; i--) {
   let option = `<option value="${ampm}">${ampm}</option>`;
   selectMenu[3].firstElementChild.insertAdjacentHTML("afterend", option);
 }
-
+// this for display the currect time
 function currentTime() {
   let date = new Date();
   let hr = date.getHours();
@@ -78,7 +78,7 @@ function currentTime() {
 setInterval(function () {
   currentTime();
 }, 1000);
-
+// this section for set the Alarm
 function setAlarm() {
   let time = `${selectMenu[0].value}:${selectMenu[1].value}:${selectMenu[2].value}:${selectMenu[3].value}`;
   if (
@@ -130,7 +130,7 @@ function setAlarmTime(value) {
   console.log("Alarm set for", alarmTime);
   console.log("Arr:", alarmArr);
 }
-
+// display the alarm list
 function addlistToDom(alarmList) {
   const li = document.createElement("li");
 
@@ -160,7 +160,7 @@ function addlistToDom(alarmList) {
   `;
   list.append(li);
 }
-
+// delete functionality section
 function deleteAlarmAgain(id) {
   console.log("ID", id);
   const newalarmArr = alarmArr.filter(function (task) {
@@ -169,7 +169,7 @@ function deleteAlarmAgain(id) {
   alarmArr = newalarmArr;
   displayList();
 }
-
+// display the list of set alarm list
 function displayList() {
   list.innerHTML = "";
   for (let i = 0; i < alarmArr.length; i++) {
