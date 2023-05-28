@@ -43,6 +43,9 @@ body {
 #display-alarm {
   color: rgb(175, 175, 175);
 }
+#clock-container:hover{
+  background-color: rgb(228,237,254);
+}
 /* ----------------------------------------------- */
 
 /* input section design  */
